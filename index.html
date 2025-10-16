@@ -5,93 +5,88 @@
     <meta http-equiv="refresh" content="43200">
 
     <title>Visit Saudi</title>
+    <link rel="stylesheet" href="nav.css" >
      <style>
-      body{
-        margin: 0;
-        padding: 0;
-        background-image: url(backgroung-saudi.jpg);
-      background-attachment: fixed;
-      }
-      footer {
-        text-align: center;
-        color: white;
-        background-color: rgba(153, 235, 240, 0.5);
-        padding: 10px 0;
-        width: 100%;
-      }
-      .top-bar {
-  background-color: #f0f0f0; 
-  padding: 5px 10px;
-  font-size: 14px;
-  text-align: left;
-}
+ section {
+    padding: 40px 80px;
+  }
 
-.top-bar a {
-  text-decoration: none;
-  color: #333;
-  margin-left: 5px;
-  padding: 5px;
-}
-      h1{
-        text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: blanchedalmond;
-      }
-    nav {
-        
-      background-color: lightblue;
-      display: flex;
-      overflow: hidden;
-      justify-content: space-between;
-      align-items: center;
-      width: 100% ;
-      opacity: 0.7;
-      padding: 0 10px;
-      
-    }
+  h2 {
+    text-align: center;
+    color: #d0f2d0;
+    margin-bottom: 30px;
+  }
 
-    nav ul {
-      list-style-type: none;
-      margin: 5px;
-      padding: 0;
-      display: flex;
-    }
-    nav ul li{
-      margin-top: 30px;
-      margin-right: 20px;
-    }
-   
- nav a {
-      display: block;
-      color: white;
-      font-weight: bold;
-      font-size: 15pt;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
+  .tourism-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
 
-    nav a:hover {
-text-decoration: underline;
-  background-color: transparent;    }
-    .right-lu {
-      display: flex;
-      gap: 15px; 
+  .place {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
 
-    }
-    .right-lu  a{
-        background-color: beige;
-        color: black;
-        border-radius: 5%;
-        border-radius: 20px;
+  .place:hover {
+    transform: translateY(-8px);
+  }
 
-    }
-     .right-lu a:hover {
-      text-decoration: none;
-      background-color: gray;
-      color: white;
-    }
+  .place img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
 
+  .place h3 {
+    margin: 15px 0 5px;
+    color: #333;
+  }
+
+  .place p {
+    color: #555;
+    font-size: 14px;
+    padding: 0 15px 20px;
+  }
+  
+  .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 0px 20px 0px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 4px solid #fff;
+
+  }
+
+  .map-container:hover {
+    transform: translateY(-5px);
+  }
+
+  .map-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    cursor: pointer;
+
+  }
+
+  p {
+    color: #010a0a;
+    max-width: 600px;
+    margin: 20px auto 0;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: bold;
+  }
    
   </style>
 
@@ -100,7 +95,7 @@ text-decoration: underline;
   <header>
     <div class="top-bar">
     <a href="mailto:445001472@sm.edu.imamu.sa">Email: 445001472@sm.edu.imamu.sa</a> |
-    Phone: +966 552616596 |
+    <a href="tel:+966552616596">Phone: +966 552616596</a> |
     <a href="https://www.linkedin.com/in/reema-alzoman-6b30732a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a> |
     <a href="https://github.com/reema-z/web-devolpment-project.git" target="_blank">GitHub</a>
   </header>
@@ -119,10 +114,51 @@ text-decoration: underline;
 <div>
   <h1 > welcome to Saudi!! Where traditions meets modren adventure!</h1>
 </div>
+
+<section id="tourism">
+  <h2>Tourism in Saudi Arabia </h2>
+
+  <div class="tourism-grid">
+    <div class="place">
+      <img src="alula.png" alt="AlUla">
+      <h3>AlUla</h3>
+      <p>Known for its stunning rock formations and ancient Nabatean tombs, AlUla is a must-visit heritage site.</p>
+    </div>
+
+    <div class="place">
+      <img src="riyadh.png" alt="Riyadh">
+      <h3>Riyadh</h3>
+      <p>The capital city blends tradition with modern vision, showcasing Saudi Arabia’s rapid development.</p>
+    </div>
+
+    <div class="place">
+      <img src="jeddah.png" alt="Jeddah">
+      <h3>Jeddah</h3>
+      <p>A coastal gem on the Red Sea, known for its vibrant art scene, historic Al-Balad, and beautiful corniche.</p>
+    </div>
+  </div>
+</section>
+
+<section id="map">
+  <h2>Saudi Arabia on the Map </h2>
+
+  <div class="map-container">
+    <a href="https://www.google.com/maps/place/Saudi+Arabia/" target="_blank">
+      <img src="mapKSA.png" alt="Map of Saudi Arabia">
+    </a>
+      <p>
+    Saudi Arabia is a land of rich heritage and rapid modernization.  
+    From the holy cities of Makkah and Madinah to futuristic projects like NEOM,  
+    the Kingdom represents a blend of history, culture, and innovation.
+  </p>
+  </div>
+
+
+</section>
 </body>
 
 
 <footer>
-  <p> &copy;2025-26 / IMSIU /CCIS<sup>TM</sup></p>
+  &copy;2025-26 / IMSIU /CCIS<sup>TM</sup>
 </footer>
 </html>
