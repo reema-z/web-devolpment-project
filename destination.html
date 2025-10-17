@@ -6,26 +6,97 @@
 
     <title>Destination</title>
     <link rel="stylesheet" href="nav.css" >
+<style> 
 
+     section {
+    padding: 40px 80px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #d0f2d0;
+    margin-bottom: 30px;
+  }
+
+  .tourism-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .place {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .place:hover {
+    transform: translateY(-8px);
+  }
+
+  .place img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .place h3 {
+    margin: 15px 0 5px;
+    color: #333;
+  }
+
+  .place p {
+    color: #555;
+    font-size: 14px;
+    padding: 0 15px 20px;
+  }
+</style>
 </head>
 <body>
-     <nav>
-       <ul>
-      <li><a href="homepage.html"><img src="logo.png" height="95" width="85"></a></li>
-      <li><a href="destination.html">Destinations</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-      <ul class="right-lu">
+    <nav>
+        <ul>
+            <li style="margin: 0;">
+                <a href="index.html"><img src="logo.png" height="95" width="85"></a>
+            </li>
+            <li><a href="destination2.html">Destinations</a></li>
+            <li><a href="gallery2.html">Gallery</a></li>
+        </ul>
+        <ul class="right-lu">
         <li class="boxed-li"><a href="getVisa.html">Get Visa</a></li>
-
-    </ul>
+        </ul>
     </nav>
 
+<section id="tourism">
+  <h2>Tourism in Saudi Arabia </h2>
+
+  <div class="tourism-grid">
+    <div class="place">
+      <img src="alula.png" alt="AlUla">
+      <h3>AlUla</h3>
+      <p>Known for its stunning rock formations and ancient Nabatean tombs, AlUla is a must-visit heritage site.</p>
+    </div>
+
+    <div class="place">
+      <img src="riyadh.png" alt="Riyadh">
+      <h3>Riyadh</h3>
+      <p>The capital city blends tradition with modern vision, showcasing Saudi Arabia’s rapid development.</p>
+    </div>
+
+    <div class="place">
+      <img src="jeddah.png" alt="Jeddah">
+      <h3>Jeddah</h3>
+      <p>A coastal gem on the Red Sea, known for its vibrant art scene, historic Al-Balad, and beautiful corniche.</p>
+    </div>
+  </div>
+</section>
     
 
-    
+</body>
+
 <footer>
  &copy;2025-26 / IMSIU /CCIS<sup>TM</sup>
 </footer>
-</body>
 </html>
