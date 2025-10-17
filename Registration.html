@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css" >
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .registration-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        .registration-container input[type="text"],
+        .registration-container input[type="date"],
+        .registration-container input[type="tel"],
+        .registration-container input[type="email"],
+        .registration-container input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .registration-container button {
+            background-color:#333;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="registration-container">
+        <h1>CREATE NEW ACCOUNT</h1>
+        
+       
+             <form action="homepage.html" method="get">
+			 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="3">
+            
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required pattern="[0-9]{8,}" title="ID must contain 8 or more digits (numbers only)">
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{9,}" title="Please enter a valid mobile number (9 digits minimum)">
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" title="Password must be at least 8 characters long">
+             
+			 <form action="signIn.html" method="post" class="sign-up-form">
+            <button type="submit">Register and Proceed to Sign In</button>
+			
+        </form>
+        
+        <p style="text-align: center; margin-top: 20px;">
+            <a href="signUp.html" style="color: green; text-decoration: none;">Already Registered? Sign In</a>
+        </p>
+    </main>
+
+</body>
+</html>
