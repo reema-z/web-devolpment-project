@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book Hotel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .BookHotel-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        .BookHotel-container input[type="text"],
+        .BookHotel-container input[type="date"],
+        .BookHotel-container input[type="tel"],
+        .BookHotel-container input[type="email"],
+        .BookHotel-container input[type="password"],
+        .BookHotel-container input[type="number"],
+        .BookHotel-container select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .BookHotel-container .radio-group,
+        .BookHotel-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .BookHotel-container .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .BookHotel-container button {
+            background-color:#333;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="BookHotel-container">
+        <form action="homepage.html" method="get">
+            
+            <h2>Book Your Hotel</h2>
+
+        <label for="City">City:</label>
+        <select id="City" name="City" required>
+            <option value="Riyadh">Riyadh</option>
+            <option value="Jeddah">Jeddah</option>
+            <option value="AlUla">AlUla</option>
+        </select>
+
+        <label for="hotel">Hotel Name:</label>
+        <select id="hotel" name="hotel" required>
+            <option value="Hilton">Narcissus The Royal Hotel</option>
+            <option value="Marriott">ibis Jeddah City Center</option>
+            <option value="Local Inn">Cloud 7 Residence AlUla</option>
+        </select>
+
+        <label for="checkin">Check-In Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Check-Out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <label for="rooms">Number of Rooms:</label>
+        <input type="number" id="rooms" name="rooms" min="1" max="5" required>
+
+        <label>Room Type:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="roomType" value="Single" required> Single</label>
+            <label><input type="radio" name="roomType" value="Double"> Double</label>
+            <label><input type="radio" name="roomType" value="Suite"> Suite</label>
+        </div>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+</body>
+
+</html>
