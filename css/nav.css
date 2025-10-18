@@ -4,7 +4,7 @@
 body{
         margin: 0;
         padding: 0;
-        background-image: url(backgroung-saudi.jpg);
+        background-image: url(../img/backgroung-saudi.jpg);
       background-attachment: fixed;
         overflow-x: hidden;
 
