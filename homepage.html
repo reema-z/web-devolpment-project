@@ -81,6 +81,22 @@
 <a href="#top" class="home-btn">
   <img src="img/home.png" alt="Home" width="60" height="60">
 </a>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var storedUsername = sessionStorage.getItem('loggedInUser');
+        
+        if (storedUsername) {
+            var welcomeHeading = document.getElementById('top');
+            
+            welcomeHeading.textContent = `Welcome, ${storedUsername}! Where traditions meet modern adventure!`;
+            
+           
+        }
+    });
+</script>
+    
 </body>
 
 
