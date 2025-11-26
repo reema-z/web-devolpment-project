@@ -29,6 +29,55 @@
             
             <h2>SIGN IN</h2>
             
+            <form id="signInForm" action="homepage.html" method="get">
+                
+                <label for="username">username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Confirm</button>
+            </form>
+            
+            <p class="small-text-link">
+                Don't have an account? <a href="Registration.html">Register New Account</a>
+            </p>
+            
+        </div>
+
+</main>
+    <footer>
+        &copy;2025-26 / IMSIU /CCIS<sup>TM</sup>
+    </footer>
+	
+	
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.getElementById('signInForm'); 
+
+            form.addEventListener('submit', function(event) {
+                
+                event.preventDefault(); 
+               
+                var username = document.getElementById('username').value.trim();
+				
+                if (username) {
+                    sessionStorage.setItem('loggedInUser', username);
+                }
+                window.location.href = form.action; 
+            });
+        });
+    </script>
+	
+	
+	
+	
+</body>
+</html>
+            
+            <h2>SIGN IN</h2>
+            
             <form action="homepage.html" method="get">
                 
                 <label for="username">username:</label>
