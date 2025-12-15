@@ -1,0 +1,65 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="43200">
+
+    <title>sign in</title>
+    <link rel="stylesheet" href="css/nav.css" >
+	<link rel="stylesheet" href="css/signUp.css">
+	
+	
+</head>
+<body>
+    <nav>
+       <ul>
+      <li style="margin: 0;"><a href="index.html"><img src="img/logo.png" height="95" width="85"></a></li>
+      <li><a href="destination2.html">Destinations</a></li>
+      <li><a href="gallery2.html">Gallery</a></li>
+      </ul>
+      <ul class="right-lu">
+
+        <li class="boxed-li"><a href="signUp.html">signUp/logIn</a></li>
+    </ul>
+    </nav>
+
+
+<main class="centered-container">
+        <div class="sign-in-box">
+            
+            <h2>SIGN IN</h2>
+            
+            <form id="signInForm" action="login.php" method="POST">
+                
+                <label for="username">username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit"  name="login">Confirm</button>
+            </form>
+            
+            <p class="small-text-link">
+                Don't have an account? <a href="Registration.php">Register New Account</a>
+            </p>
+            
+        </div>
+
+</main>
+    <footer>
+        &copy;2025-26 / IMSIU /CCIS<sup>TM</sup>
+    </footer>
+	
+
+	
+	
+	
+</body>
+</html>
