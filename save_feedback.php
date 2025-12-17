@@ -31,8 +31,11 @@ if($check_query){
             
             <p style='text-align: center;'>We really apprecite your time and opinion.</p> 
 
+            <div class='button-row'>
             <a href='view_feedback.php' class='button-link'>View All Feedbacks</a>
             <a href='Feedback.php' class='button-link'>Give Another</a>
+            </div>
+
     </main>
 
 </body>
