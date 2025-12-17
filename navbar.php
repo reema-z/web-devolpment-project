@@ -19,6 +19,8 @@ if (session_status() === PHP_SESSION_NONE) {
         <li><a href="gallery.php">Gallery</a></li>
 
         <li><a href="aboutUs.php">About Us</a></li>
+
+        <li><a href="Feedback.php">Feedback</a></li>
         </ul>
       <ul class="right-lu">
     <?php if (isset($_SESSION['user'])): ?>

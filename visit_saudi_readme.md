@@ -96,7 +96,7 @@ This project was developed for educational purposes to practice:
 **Contributors:**
 
 - Aryam Alsugir
-- Ameerah Alatiq
+- Amirah Alateeq
 
 This project was developed collaboratively as part of an academic group assignment.
 
