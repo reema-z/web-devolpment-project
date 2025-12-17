@@ -66,6 +66,18 @@ body {
   background-color: #555;
 }
 
+.feedback-container .button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.feedback-container .button-row a.button-link {
+  width: 48%;
+  margin-top: 0;
+}
+
 .feedback-container table {
   width: 100%;
   border-collapse: collapse;
