@@ -14,6 +14,20 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="css/nav.css" >
     <link rel="stylesheet" href="css/homepage.css">  
 
+
+    <style>
+        df-messenger {
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          z-index: 9999;
+        }
+
+        df-messenger .df-chat-wrapper {
+          max-height: 500px;
+        }
+    </style>
+
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
       intent="WELCOME"
