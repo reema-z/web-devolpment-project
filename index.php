@@ -14,6 +14,13 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="css/nav.css" >
     <link rel="stylesheet" href="css/homepage.css">  
 
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="VisitSaudiBot"
+      agent-id="17bf1ddd-6741-46ee-8ee2-e66225527cf1"
+      language-code="en"
+    ></df-messenger>
 
 </head>
 <body>
