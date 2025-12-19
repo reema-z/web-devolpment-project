@@ -15,17 +15,6 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="css/homepage.css">  
 
 
-    <style>
-        df-messenger {
-          position: fixed !important;
-          left: 20px !important;
-          right: auto !important;
-          bottom: 20px !important;
-          z-index: 1001;
-        }
-    </style>
-
-
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
       intent="WELCOME"
@@ -34,6 +23,7 @@ if (session_status() === PHP_SESSION_NONE) {
       language-code="en"
     ></df-messenger>
 
+    
 </head>
 <body>
   <?php
