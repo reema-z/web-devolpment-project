@@ -17,8 +17,8 @@ if (session_status() === PHP_SESSION_NONE) {
 
     <style>
       .home-btn{
-        bottom: 80px;
-        right: 20px;
+        bottom: 20px;
+        right: 1330px;
       }
     </style>
 
