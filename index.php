@@ -17,15 +17,11 @@ if (session_status() === PHP_SESSION_NONE) {
 
     <style>
         df-messenger {
-          position: fixed;
-          bottom: 20px;
-          left: 20px; 
-          z-index: 1000; 
-        }
-
-        df-messenger .df-chat-wrapper {
-          max-height: 500px;
-          width: 350px;
+          position: fixed !important;
+          left: 20px !important;
+          right: auto !important;
+          bottom: 20px !important;
+          z-index: 1001;
         }
     </style>
 
