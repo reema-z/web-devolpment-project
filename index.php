@@ -15,6 +15,13 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="css/homepage.css">  
 
 
+    <style>
+      .home-btn{
+        bottom: 80px;
+        right: 20px;
+      }
+    </style>
+
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
       intent="WELCOME"
