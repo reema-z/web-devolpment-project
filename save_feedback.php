@@ -6,7 +6,7 @@ $name = $_POST['name'];
 $em = $_POST['email'];
 $msg = $_POST['message'];
 
-$data_insert = "INSERT INTO feedback1(name, email, message) values('$name','$em','$msg')";
+$data_insert = "INSERT INTO feedback11(name, email, message) values('$name','$em','$msg')";
 
 $check_query=mysqli_query($conn,$data_insert);
 

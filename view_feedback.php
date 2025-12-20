@@ -2,7 +2,7 @@
 
 include'conn.php';
 
-$show_query ="SELECT * FROM feedback1";
+$show_query ="SELECT * FROM feedback11";
 
 $check_query=mysqli_query($conn,$show_query);
 
