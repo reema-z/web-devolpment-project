@@ -21,6 +21,8 @@ body {
 
 .navbar,
 nav {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     display: block;
     
