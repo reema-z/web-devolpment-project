@@ -106,11 +106,12 @@ document.addEventListener('DOMContentLoaded', function() {
             alert(`Dear user, you have selected ${visaType}.`);
 
         
-            window.location.href = 'homepage.html'; 
+             window.location.href = 'index.php'; 
         });
     }
 });
 </script>
 
 </body> 
+
 </html>
