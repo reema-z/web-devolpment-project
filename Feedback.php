@@ -1,3 +1,9 @@
+
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,11 +13,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/feedback.css">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    display: block;  }
 
+.navbar,
+nav {
+    width: 100%;
+    display: block;
+    
+}
+
+.feedback-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;  
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+  </style>
 </head>
 
 <body>
-
+  <header>
+   <?php
+  include "navbar.php";
+?>
+</header>
     <main class="feedback-container">
         <form action="save_feedback.php" method="POST">
             
