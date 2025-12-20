@@ -46,6 +46,10 @@ This project was developed as part of an academic course and focuses on applying
 │── register_login.php
 │── logout.php
 │── navbar.php
+│── conn.php
+│── feedback.php
+│── save_feedback.php
+│── view_feedback.php
 │── css/
 │── img/
 ```
