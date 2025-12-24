@@ -23,7 +23,7 @@ if (isset($_POST['login'])) {
         // Username does not exist
         echo "<script>
                 alert('No such username. Please register first!');
-                window.location.href='Registration.php';
+                window.location.href='login.php';
               </script>";
         exit();
     } else {
